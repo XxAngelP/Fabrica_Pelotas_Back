@@ -1,10 +1,8 @@
 package Marca;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 
-@Entity
 public class Marca {
     @Id
     @Column(nullable = false)
@@ -16,7 +14,7 @@ public class Marca {
     @Column(nullable = false)
     private String nombreMarca;
 
-    public Long getIdMarca() {
+    public Integer getIdMarca() {
         return idMarca;
     }
 
