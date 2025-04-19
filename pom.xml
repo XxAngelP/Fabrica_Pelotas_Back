@@ -40,10 +40,6 @@
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-jdbc-mysql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
         </dependency>
         <dependency>
@@ -57,6 +53,13 @@
             <version>1.18.26</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.rocketfuel.sdbc</groupId>
+            <artifactId>mariadb-jdbc_2.11</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
