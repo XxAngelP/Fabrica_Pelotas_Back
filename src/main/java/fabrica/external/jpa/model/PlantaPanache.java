@@ -1,6 +1,6 @@
 package fabrica.external.jpa.model;
 
-import fabrica.core.entity.Plantas;
+import fabrica.core.entity.Planta;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "Plantas")
-public class PlantasPanache {
+public class PlantaPanache {
     @Id
     @Column(name = "colorPlanta")
     private String colorPlanta;
@@ -23,8 +23,8 @@ public class PlantasPanache {
     @Column(name = "superficie")
     private Float superficie;
 
-    public Plantas toEntity(){
-        return fabrica.core.entity.Plantas.builder()
+    public Planta toEntity(){
+        return Planta.builder()
                 .colorPlanta(this.colorPlanta)
                 .nombrePlanta(this.nombrePlanta)
                 .superficie(this.superficie)

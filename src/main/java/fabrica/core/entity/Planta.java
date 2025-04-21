@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Plantas {
+public class Planta {
     private String colorPlanta;
     private String nombrePlanta;
     private Float superficie;

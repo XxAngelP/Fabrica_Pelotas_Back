@@ -1,7 +1,7 @@
 package fabrica.external.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import fabrica.core.entity.Plantas;
+import fabrica.core.entity.Planta;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,11 +18,11 @@ public class PlantasDto {
     private Float superficie;
 
 
-    public static PlantasDto fromEntity(Plantas plantas){
+    public static PlantasDto fromEntity(Planta planta){
         return PlantasDto.builder()
-                .colorPlanta(plantas.getColorPlanta())
-                .nombrePlanta(plantas.getNombrePlanta())
-                .superficie(plantas.getSuperficie())
+                .colorPlanta(planta.getColorPlanta())
+                .nombrePlanta(planta.getNombrePlanta())
+                .superficie(planta.getSuperficie())
                 .build();
     }
 }

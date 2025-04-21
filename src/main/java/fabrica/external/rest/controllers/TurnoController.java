@@ -16,5 +16,4 @@ public class TurnoController {
     public List<TurnoDto> list() {
         return turnoService.listAll().stream().map(TurnoDto::fromEntity).collect(Collectors.toList());
     }
-
 }
