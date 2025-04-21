@@ -1,6 +1,5 @@
 package fabrica.external.jpa.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import fabrica.core.entity.Turno;
 import jakarta.persistence.*;
 import lombok.Builder;
