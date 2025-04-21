@@ -58,8 +58,10 @@
             <artifactId>mariadb-jdbc_2.11</artifactId>
             <version>4.0.0</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

@@ -17,7 +17,7 @@ public class DificultadPanache {
     @SequenceGenerator(name = "Dificultad_seq", sequenceName = "Dificultad_seq", allocationSize = 1)
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Dificultad_seq")
     private Integer idDificultad;
-    @Column(nullable = false, name = "nombre_dificultad")
+    @Column(nullable = false, name = "nombreDificultad")
     private String nombreDificultad;
 
     public Dificultad toEntity(){
