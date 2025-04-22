@@ -1,5 +1,6 @@
 package fabrica.external.jpa.model;
 
+import fabrica.core.entity.Proceso;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -22,4 +23,13 @@ public class ProcesoPanache {
     @ManyToOne
     @JoinColumn(name = "fk_idDificultad", referencedColumnName = "idDificultad", insertable = false, updatable = false)
     private DificultadPanache idDificultad;
+
+
+    public Proceso toEntity(){
+        return Proceso.builder()
+                .idProceso(this.idProceso)
+                .nombreProceso(this.nombreProceso)
+                .nombreDificultad(this.idDificultad.getNombreDificultad())
+                .build();
+    }
 }

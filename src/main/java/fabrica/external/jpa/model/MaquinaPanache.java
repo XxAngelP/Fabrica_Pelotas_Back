@@ -1,5 +1,6 @@
 package fabrica.external.jpa.model;
 
+import fabrica.core.entity.Maquina;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -31,4 +32,14 @@ public class MaquinaPanache {
     @JoinColumn(name = "fk_idProcesoPlanta", referencedColumnName = "idProcesoPlanta", insertable = false, updatable = false)
     private ProcesoPlantaPanache idProcesoPlanta;
 
+public Maquina toEntity() {
+    return Maquina.builder()
+            .idMaquina(this.idMaquina)
+            .modeloMaquina(this.modeloMaquina)
+            .noSerie(this.noSerie)
+            .estatus(this.estatus)
+            .nombreMarca(this.idMarca != null ? this.idMarca.getNombreMarca() : null)
+            .idProcesoPlanta(this.idProcesoPlanta != null ? this.idProcesoPlanta.getIdProcesoPlanta() : null)
+            .build();
+    }
 }

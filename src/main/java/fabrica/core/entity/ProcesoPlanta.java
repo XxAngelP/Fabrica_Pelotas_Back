@@ -7,8 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Proceso {
-    private Integer idProceso;
+public class ProcesoPlanta {
+    private Integer idProcesoPlanta;
+    private String colorPlanta;
     private String nombreProceso;
-    private String nombreDificultad;
 }
