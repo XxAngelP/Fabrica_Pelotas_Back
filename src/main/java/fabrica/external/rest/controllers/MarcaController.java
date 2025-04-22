@@ -8,6 +8,9 @@ import jakarta.ws.rs.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Path("fabrica/marca")
+@Produces("application/json")
+@Consumes("application/json")
 public class MarcaController {
     @Inject
     MarcaService marcaService;

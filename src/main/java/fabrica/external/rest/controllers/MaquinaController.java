@@ -16,7 +16,7 @@ import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Path("fabrica")
+@Path("fabrica/maquina")
 @Produces("application/json")
 @Consumes("application/json")
 public class MaquinaController {
