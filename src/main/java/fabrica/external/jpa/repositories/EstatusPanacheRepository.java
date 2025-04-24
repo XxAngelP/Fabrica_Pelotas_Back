@@ -1,7 +1,7 @@
 package fabrica.external.jpa.repositories;
 
-import fabrica.core.entity.Estatus;
+import fabrica.external.jpa.model.EstatusPanache;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
-public class EstatusPanacheRepository implements PanacheRepository<Estatus> {
+public class EstatusPanacheRepository implements PanacheRepository<EstatusPanache> {
 }
