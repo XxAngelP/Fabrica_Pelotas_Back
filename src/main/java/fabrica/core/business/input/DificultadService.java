@@ -5,14 +5,10 @@ import fabrica.core.entity.Dificultad;
 import java.util.List;
 
 /**
- * Servicio para gestionar las operaciones relacionadas con las dificultades.
+ * Este Servicio es independiente y solo manejara metodos GET
+ * para obtener las dificultades como catalogo para vincular
+ * a los procesos.
  */
 public interface DificultadService {
-
-    /**
-     * Obtiene un listado de todas las dificultades registradas.
-     *
-     * @return Una lista que contiene todas las dificultades.
-     */
     List<Dificultad> listAll();
 }

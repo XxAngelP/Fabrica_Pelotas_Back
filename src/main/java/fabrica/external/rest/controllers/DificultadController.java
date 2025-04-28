@@ -1,9 +1,7 @@
 package fabrica.external.rest.controllers;
 
-import Dificultad.Dificultad;
 import fabrica.core.business.input.DificultadService;
 import fabrica.external.rest.dto.DificultadDto;
-import fabrica.external.rest.dto.MaquinaDto;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
