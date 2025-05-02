@@ -2,14 +2,14 @@ package fabrica.external.jpa.model;
 
 import fabrica.core.entity.Estatus;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Builder
 @Setter
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Estatus")
 public class EstatusPanache {
     @Id

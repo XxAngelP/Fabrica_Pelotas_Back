@@ -2,14 +2,14 @@ package fabrica.external.jpa.model;
 
 import fabrica.core.entity.Proceso;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Builder
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Proceso")
 public class ProcesoPanache {
     @Id

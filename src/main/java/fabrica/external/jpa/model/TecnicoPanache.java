@@ -4,14 +4,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import fabrica.core.entity.Tecnico;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Builder
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Tecnico")
 public class TecnicoPanache {
     @Id
