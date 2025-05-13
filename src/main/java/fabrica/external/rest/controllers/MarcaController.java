@@ -1,7 +1,6 @@
 package fabrica.external.rest.controllers;
 
 import fabrica.core.business.input.MarcaService;
-import fabrica.external.rest.dto.MaquinaDto;
 import fabrica.external.rest.dto.MarcaDto;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -10,7 +9,6 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 
-import java.util.List;
 import java.util.stream.Collectors;
 
 @Path("fabrica/marca")

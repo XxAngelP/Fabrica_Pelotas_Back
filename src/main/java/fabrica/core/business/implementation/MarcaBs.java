@@ -20,8 +20,9 @@ public class MarcaBs implements MarcaService {
 
     @Override
     public Boolean createMarca(Marca marca) {
-        //recibe la marca
-
-        return null;
+        if(marcaRepository.findMarcaByNombre(marca.getNombreMarca()).isPresent()){
+            return false;
+        }
+        return marcaRepository.saveMarca(marca);
     }
 }

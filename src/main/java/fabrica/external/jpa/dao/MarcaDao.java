@@ -30,7 +30,8 @@ public class MarcaDao implements MarcaRepository {
 
     @Override
     public Boolean saveMarca(Marca marca) {
-        return null;
+        marcaPanacheRepository.persist(MarcaPanache.fromEntity(marca));
+        return true;
     }
 
     @Override

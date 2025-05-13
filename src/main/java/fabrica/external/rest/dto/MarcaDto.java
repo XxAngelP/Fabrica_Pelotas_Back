@@ -25,4 +25,8 @@ public class MarcaDto {
                 .nombreMarca(marca.getNombreMarca())
                 .build();
     }
+
+    public Marca toEntity(){
+        return Marca.builder().nombreMarca(this.nombreMarca).build();
+    }
 }

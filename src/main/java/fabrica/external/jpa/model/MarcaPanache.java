@@ -26,4 +26,8 @@ public class MarcaPanache {
                 .nombreMarca(this.getNombreMarca())
                 .build();
     }
+    
+    public static MarcaPanache fromEntity(Marca marca){
+        return MarcaPanache.builder().nombreMarca(marca.getNombreMarca()).build();
+    }
 }
