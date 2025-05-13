@@ -17,4 +17,11 @@ public class MarcaBs implements MarcaService {
     public List<Marca> listAll() {
         return marcaRepository.findAll();
     }
+
+    @Override
+    public Boolean createMarca(Marca marca) {
+        //recibe la marca
+
+        return null;
+    }
 }
