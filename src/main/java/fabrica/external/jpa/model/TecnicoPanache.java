@@ -1,9 +1,7 @@
 package fabrica.external.jpa.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import fabrica.core.entity.Tecnico;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Entity
