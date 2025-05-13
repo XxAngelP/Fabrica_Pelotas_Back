@@ -11,7 +11,7 @@ public class Maquina{
     private Integer idMaquina;
     private String modeloMaquina;
     private String noSerie;
-    private Integer estatus;
+    private Integer idEstatus;
     private String nombreMarca;
     private Integer idProcesoPlanta;
 }

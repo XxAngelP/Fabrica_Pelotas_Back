@@ -23,7 +23,7 @@ public class MaquinaDto {
     private String noSerie;
     @JsonProperty
     @Schema(description = "Identificador de Estatus")
-    private Integer estatus;
+    private Integer idEstatus;
     @JsonProperty
     @Schema(description = "nombre de Marca")
     private String nombreMarca;
@@ -37,7 +37,7 @@ public class MaquinaDto {
                 .idMaquina(maquina.getIdMaquina())
                 .modeloMaquina(maquina.getModeloMaquina())
                 .noSerie(maquina.getNoSerie())
-                .estatus(maquina.getEstatus())
+                .idEstatus(maquina.getIdEstatus())
                 .nombreMarca(maquina.getNombreMarca())
                 .idProcesoPlanta(maquina.getIdProcesoPlanta())
                 .build();

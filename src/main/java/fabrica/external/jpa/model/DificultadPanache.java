@@ -4,23 +4,18 @@ import fabrica.core.entity.Dificultad;
 import jakarta.persistence.*;
 import lombok.*;
 
-/**
- * Entidad que representa una Dificultad en la base de datos.
- *
- * @author Angel Erensto Baez S
- */
 @Entity
 @Builder
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Dificultad")
+@Table(name = "Dificutad")
 public class DificultadPanache {
     @Id
     @Column(nullable = false, name = "idDificultad")
     @SequenceGenerator(name = "Dificultad_seq", sequenceName = "Dificultad_seq", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "Dificultad_seq")
+    @GeneratedValue(generator = "Dificultad_seq",strategy = GenerationType.SEQUENCE)
     private Integer idDificultad;
     @Column(nullable = false, name = "nombreDificultad")
     private String nombreDificultad;

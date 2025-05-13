@@ -21,8 +21,8 @@ public class MaquinaPanache {
     private String modeloMaquina;
     @Column(name = "noSerie")
     private String noSerie;
-    @Column(name = "estatus")
-    private Integer estatus;
+    @Column(name = "idEstatus")
+    private Integer idEstatus;
 
     @ManyToOne
     @JoinColumn(name = "fk_idMarca", referencedColumnName = "idMarca", insertable = false, updatable = false)
@@ -37,7 +37,7 @@ public Maquina toEntity() {
             .idMaquina(this.idMaquina)
             .modeloMaquina(this.modeloMaquina)
             .noSerie(this.noSerie)
-            .estatus(this.estatus)
+            .idEstatus(this.idEstatus)
             .nombreMarca(this.idMarca != null ? this.idMarca.getNombreMarca() : null)
             .idProcesoPlanta(this.idProcesoPlanta != null ? this.idProcesoPlanta.getIdProcesoPlanta() : null)
             .build();
