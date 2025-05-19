@@ -14,4 +14,6 @@ public interface MarcaRepository {
     Boolean saveMarca(Marca marca);
 
     Optional<Marca> findMarcaByNombre(String nombre);
+
+    Boolean deleteMarca(Integer id);
 }

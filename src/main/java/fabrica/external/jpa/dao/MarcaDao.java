@@ -24,7 +24,6 @@ public class MarcaDao implements MarcaRepository {
     @Override
     public Optional<Marca> findMarcaById(Integer id) {
         Long identificador = Long.valueOf(id);
-        
         return Optional.ofNullable(marcaPanacheRepository.findById(identificador).toEntity());
     }
 
@@ -38,4 +37,12 @@ public class MarcaDao implements MarcaRepository {
     public Optional<Marca> findMarcaByNombre(String nombre) {
         return Optional.ofNullable(marcaPanacheRepository.findByNombre(nombre).toEntity());
     }
+
+    @Override
+    public Boolean deleteMarca(Integer id) {
+        Long Id = Long.valueOf(id);
+        return marcaPanacheRepository.deleteById(Id);
+    }
+
+
 }

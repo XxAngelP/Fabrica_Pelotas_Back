@@ -15,4 +15,8 @@ public interface MarcaService {
     List<Marca> listAll();
 
     Boolean createMarca(Marca marca);
+
+    Boolean updateMarca(Marca marca);
+
+    Boolean deleteMarca(Integer id);
 }
