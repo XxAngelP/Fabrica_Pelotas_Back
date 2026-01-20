@@ -17,4 +17,28 @@ public class MarcaBs implements MarcaService {
     public List<Marca> listAll() {
         return marcaRepository.findAll();
     }
+
+    @Override
+    public Boolean createMarca(Marca marca) {
+        if(marcaRepository.findMarcaByNombre(marca.getNombreMarca()).isPresent()){
+            return false;
+        }
+        return marcaRepository.saveMarca(marca);
+    }
+
+    @Override
+    public Boolean updateMarca(Marca marca) {
+        if(marcaRepository.findMarcaByNombre(marca.getNombreMarca()).isPresent()){
+            return marcaRepository.saveMarca(marca);
+        }
+        return false;
+    }
+
+    @Override
+    public Boolean deleteMarca(Integer id) {
+        if(marcaRepository.findMarcaById(id).isPresent()){
+            marcaRepository.deleteMarca(id);
+        }
+        return true;
+    }
 }
